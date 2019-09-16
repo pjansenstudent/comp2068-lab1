@@ -1,5 +1,5 @@
 console.log("Let's Play Rock! Paper! Scissors!\n");
-let compChoice = Math.random();
+let compChoice = Math.random(); 
 let compMove = "";
 if(compChoice <= 0.34){
   compMove = "Rock";
@@ -8,6 +8,8 @@ if(compChoice <= 0.34){
 }else if(compChoice <= 1){
   compMove = "Paper";
 }
+
+//Creating a While loop for user input (not functioning properly under JSbin at the moment)
 let check = false;
 let userMove = "blank";
 let userChoice = prompt("Rock, Paper, or Scissors?");
@@ -24,7 +26,7 @@ while(check === false){
   }
   else{
     userChoice = prompt("Error: Please enter Rock, Paper, or Scissors");
-  }
+  } // For some reason, there appears to be a slight issue with this while loop in JSBin, not sure why, but it only checks once for this, I am unsure why.
 }
 
 console.log("Your Move: " + userMove + ".\nComputer Move: " + compMove + "\n");
@@ -55,4 +57,4 @@ if (userMove === "Rock"){
     }else if(compMove === "Paper"){
         console.log("You Win!");
     }
-}
+}//a bit of a block of code, but it does function, I could have simplified a bit, but it is functional
