@@ -1,5 +1,5 @@
 console.log("Let's Play Rock! Paper! Scissors!\n");
-let compChoice = Math.Random();
+let compChoice = Math.random();
 let compMove = "";
 if(compChoice <= 0.34){
   compMove = "Rock";

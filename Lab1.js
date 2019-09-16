@@ -27,32 +27,32 @@ while(check === false){
   }
 }
 
-console.log("Your Move: " + userMove + ".\nComputer Move: " + computerMove + "\n");
+console.log("Your Move: " + userMove + ".\nComputer Move: " + compMove + "\n");
 
-if (userMove === "Rock" && computerMove === "Rock"){
+if (userMove === "Rock" && compMove === "Rock"){
   console.log("Draw!, It's a tie");
-}else if(userMove === "Paper" && computerMove === "Paper"){
+}else if(userMove === "Paper" && compMove === "Paper"){
   console.log("Draw!, It's a tie");
-}else if(userMove === "Scissors" && computerMove === "Scissors"){
+}else if(userMove === "Scissors" && compMove === "Scissors"){
     console.log("Draw!, It's a tie");
 }
 
 if (userMove === "Rock"){
-    if(computerMove === "Paper"){
+    if(compMove === "Paper"){
         console.log("Computer Wins!");
-    }else if(computerMove === "Scissors"){
+    }else if(compMove === "Scissors"){
         console.log("You Win!");
     }
 } else if (userMove === "Paper"){
-    if(computerMove === "Scissors"){
+    if(compMove === "Scissors"){
         console.log("Computer Wins!");
-    }else if(computerMove === "Rock"){
+    }else if(compMove === "Rock"){
         console.log("You Win!");
     }
 }else if(userMove === "Scissors"){
-    if(computerMove === "Rock"){
+    if(compMove === "Rock"){
         console.log("Computer Wins!");
-    }else if(computerMove === "Paper"){
+    }else if(compMove === "Paper"){
         console.log("You Win!");
     }
 }
